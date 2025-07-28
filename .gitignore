@@ -1,0 +1,7 @@
+build/
+dist/
+bd.json
+ico.ico
+main.spec
+log.txt
+main.exe
