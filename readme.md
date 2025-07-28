@@ -12,8 +12,8 @@ A linha 12 do arquivo pastas.py deve ser alterada, especificando o caminho corre
 Recomenda-se que a linha 13, se alterada, aponte para uma pasta local fora do oneDrive.
 
 ```sh
-base_path = r"C:\Users\***\Certificados - Documentos"
-save_path = "C:/oi/"
+base_path = r"C:\raiz do problema"
+save_path = "C:/output/"
 ```
 
 Deve ser gerado um banco de dados, se não existir. Executar diretamente o formatar.py irá permitir extrair de um arquivo xlsx.
