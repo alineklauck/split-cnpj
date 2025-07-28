@@ -1,10 +1,15 @@
 import os
+import sys
 from datetime import datetime
 
 def escrever_log(mensagem: str):
-    # Caminho absoluto para log.txt na mesma pasta do script
-    pasta_script = os.path.dirname(os.path.abspath(__file__))
-    caminho_log = os.path.join(pasta_script, "log.txt")
+    # Detecta o caminho real (do .exe ou do script)
+    if getattr(sys, 'frozen', False):
+        pasta_base = os.path.dirname(sys.executable)
+    else:
+        pasta_base = os.path.dirname(os.path.abspath(__file__))
+
+    caminho_log = os.path.join(pasta_base, "log.txt")
 
     # Timestamp atual no formato: 2025-07-28 15:30:45
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

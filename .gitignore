@@ -1,7 +1,8 @@
+__pycache__
 build/
 dist/
 bd.json
 ico.ico
-main.spec
 log.txt
-main.exe
+pastas.exe
+formatar.exe

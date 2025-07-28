@@ -80,7 +80,8 @@ def buscar_caminho(cnpj: str) -> str | None:
     return None
 
 if __name__ == "__main__":
-    #processar_xlsx("batata.xlsx")
-    #print(identificar_documento("cliente 2345678000195"))
+    print("Insira o nome do arquivo")
+    processar_xlsx((input(),".xlsx"))
+    #print(identificar_documento("cliente 000100"))
     #print(identificar_documento("cpf do cliente é 123456789"))
-    print(buscar_caminho("03.921.512/0001-89"))
+    #print(buscar_caminho("00.000.000/0001-00"))
