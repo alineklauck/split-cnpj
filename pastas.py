@@ -9,8 +9,8 @@ def remover_somente_leitura(func, path, _):
     os.chmod(path, stat.S_IWRITE)
     func(path)
 
-base_path = r"C:\Users\***\Certificados - Documentos"
-save_path = "C:/oi/"
+base_path = r"C:\raiz do problema"
+save_path = "C:/output/"
 
 for nome in os.listdir(base_path):
     caminho = os.path.join(base_path, nome)
