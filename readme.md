@@ -2,13 +2,13 @@
 
 Ferramenta para separação de certificados de acordo com o banco de dados
 
-- Os certificados são gerados pela automação no Power Automate, são todos enviados para o Sharepoint de certificados
+- Os certificados são todos salvos dentro de uma mesma pasta raiz.
 - Dependendo do formulário, podem ser separados de acordo com o CPJ/CPF ou nome.
-- Esse código serve pra CNPJ, ou pode ser alterado para identificar outra forma padronizada de separação
+- Esse código serve pra CNPJ/CPF, ou pode ser alterado para identificar outra forma padronizada de separação.
 
 ## Setup
 
-A linha 12 do arquivo pastas.py deve ser alterada, especificando o caminho correto para a pasta do Sharepoint de Certificados na sua máquina.
+A linha 12 do arquivo pastas.py deve ser alterada, especificando o caminho correto para a raiz das pastas a serem separadas.
 Recomenda-se que a linha 13, se alterada, aponte para uma pasta local fora do oneDrive.
 
 ```sh
